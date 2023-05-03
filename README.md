@@ -96,16 +96,22 @@ We welcome contributions to this project! Here's how you can contribute:
 
 2. Clone the forked repository to your local machine:
 
+```
 git clone https://github.com/[YOUR_USERNAME]/[REPO_NAME].git
+```
 
 3. Make your changes and commit them:
 
+```
 git add [FILENAMES]
 git commit -m "Your commit message"
+```
 
 4. Push your changes to your forked repository:
 
+```
 git push origin master
+```
 
 5. Create a pull request by navigating to the original repository and clicking on the "New pull request" button. 
 
@@ -117,16 +123,22 @@ git push origin master
 
 2. Clone the forked repository to your local machine using Git Bash or any other command-line interface:
 
+```
 git clone https://github.com/[YOUR_USERNAME]/[REPO_NAME].git#
+```
 
 3. Make your changes and commit them:
 
+```
 git add [FILENAMES]
 git commit -m "Your commit message"
+```
 
 4. Push your changes to your forked repository:
 
+```
 git push origin master
+```
 
 5. Create a pull request by navigating to the original repository and clicking on the "New pull request" button.
 
