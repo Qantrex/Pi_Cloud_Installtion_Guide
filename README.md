@@ -13,7 +13,7 @@ This repository contains instructions and scripts for setting up a NextCloud clo
 
 ## Installation
 
-1. Download Raspberry Pi OS Lite from the official website (https://www.raspberrypi.org/software/operating-systems/). This version does not include a graphical user interface (GUI) and is recommended for better performance.
+1. Download Raspberry Pi OS Lite from the official website (https://www.raspberrypi.com/software/). This version does not include a graphical user interface (GUI) and is recommended for better performance.
 
 2. Download and install the Raspberry Pi Imager tool from the same website. This tool will help you write the Raspberry Pi OS Lite image to the microSD card.
 
