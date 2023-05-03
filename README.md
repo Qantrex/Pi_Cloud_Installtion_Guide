@@ -13,7 +13,8 @@ This repository contains **instructions** for setting up a NextCloud cloud serve
 
 ## Installation 🔽
 
-1. Download the Raspberry NextCloud Image ([Download](https://github.com/nextcloud/nextcloudpi/releases/download/v1.52.0/NextCloudPi_RaspberryPi_v1.52.0.zip)). This version includes an installed NextCloud host so the setup is kept **minimal**. If you **dont** want to use the premade image you can follow this [Guide](https://docs.nextcloud.com/server/latest/admin_manual/installation).
+1. Download the Raspberry NextCloud Image ([Download](https://github.com/nextcloud/nextcloudpi/releases/download/v1.52.0/NextCloudPi_RaspberryPi_v1.52.0.zip)). This version includes an installed NextCloud host so the setup is kept **minimal**. 
+If you **dont** want to use the premade image you can use the custom script I made (Note: I do not update the script and you have to have basic bash knowledge to be able to use it. For further [Help](https://docs.nextcloud.com/server/latest/admin_manual/installation).
 
 2. Use the Raspberry Pi Imager ([Download](https://www.raspberrypi.com/software/)) to write the .img file to the microSD card. Insert the microSD card into your computer and follow the prompts in the Raspberry Pi Imager tool to complete the process. Select "Choose OS" and then "Custom".
 
