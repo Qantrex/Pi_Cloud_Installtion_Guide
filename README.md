@@ -13,52 +13,45 @@ This repository contains instructions and scripts for setting up a NextCloud clo
 
 ## Installation
 
-1. Download Raspberry Pi OS Lite from the official website (https://www.raspberrypi.com/software/). This version does not include a graphical user interface (GUI) and is recommended for better performance.
+1. Download the Raspberry NextCloud image ([Download](https://github.com/nextcloud/nextcloudpi/releases/download/v1.52.0/NextCloudPi_RaspberryPi_v1.52.0.zip)). This version includes an installed NextCloud host so the setup is kept minimal. If you dont want to use the premade image you can follow this [Guide](https://docs.nextcloud.com/server/latest/admin_manual/installation).
 
-2. Download and install the Raspberry Pi Imager tool from the same website. This tool will help you write the Raspberry Pi OS Lite image to the microSD card.
+2. Use the Raspberry Pi Imager ([Download](https://www.raspberrypi.com/software/)) to write the .img file to the microSD card. Insert the microSD card into your computer and follow the prompts in the Raspberry Pi Imager tool to complete the process. Select "Choose OS" and then "Custom".
 
-3. Use the Raspberry Pi Imager to write the Raspberry Pi OS Lite image to the microSD card. Insert the microSD card into your computer and follow the prompts in the Raspberry Pi Imager tool to complete the process.
+3. If wanted you can use CTRL+STRG+X to open advanced settings and setup you network connection or ssh beforehand. (Only if you know what you are doing)
 
-4. Insert the microSD card into the Raspberry Pi and connect it to your network using an Ethernet cable. Power on the Raspberry Pi.
+4. Insert the microSD card into the Raspberry Pi and connect it to your network using an Ethernet cable or like previously mentioned configure the network beforehand in the Imager. Power on the Raspberry Pi.
 
 5. Find the IP address of your Raspberry Pi by running the following command in the Terminal app on another device connected to the same network:
 
     ```
+    sudo apt install nmap
     nmap -sn [network address]/24
     ```
-
-    Replace `[network address]` with the IP address of your network router. This command will show a list of devices on your network, including the Raspberry Pi with its IP address.
+    Replace `[network address]` with the IP address of your network router. This command will show a list of devices on your network, including the Raspberry Pi with       its IP address.
+    
+    another option is to run the following command on the rasberry pi and seatch for eth0 if connected through LAN or wlan0 if connected wireless
+    ```
+    ifconfig
+    ```
 
 6. Log in to the Raspberry Pi with the default username "pi" and password "raspberry".
 
-7. Install the necessary packages by running the following commands in the Terminal app:
+7. Update all packages to the latest version by running the following commands in the Terminal app:
 
     ```
     sudo apt update
     sudo apt upgrade
-    sudo apt install -y apache2 mariadb-server libapache2-mod-php7.3 \
-        openssl php-imagick php7.3-common php7.3-curl php7.3-gd \
-        php7.3-imap php7.3-intl php7.3-json php7.3-ldap php7.3-mbstring \
-        php7.3-mysql php7.3-pgsql php-smbclient php-ssh2 php7.3-sqlite3 \
-        php7.3-xml php7.3-zip php-apcu php-redis redis-server wget curl \
-        bzip2 sudo unzip cron
     ```
 
-    This will install all the required packages and dependencies for Nextcloud.
+    This will update all the required packages and dependencies for Nextcloud.
 
-8. Clone the Nextcloud installation repository by running the following command in the Terminal app:
-
-    ```
-    git clone https://github.com/yourusername/raspberry-pi-nextcloud-server.git
-    ```
-
-9. Change directory to the cloned repository with the following command:
+8. Change directory to the Nextcloud repository with the following command:
 
     ```
     cd raspberry-pi-nextcloud-server
     ```
 
-10. Run the installation script with the following command:
+9. Run the installation script with the following command:
 
     ```
     sudo ./install.sh
@@ -66,7 +59,7 @@ This repository contains instructions and scripts for setting up a NextCloud clo
 
     This will start the installation process and guide you through configuring the web server and database server.
 
-11. Once the installation is complete, navigate to `http://[Raspberry Pi IP address]/nextcloud` on a web browser on another device connected to the same network to set up your Nextcloud account.
+10. Once the installation is complete, navigate to `http://[Raspberry Pi IP address]/nextcloud` on a web browser on another device connected to the same network to set up your Nextcloud account.
 
 ## Usage
 
