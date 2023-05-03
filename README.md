@@ -1,8 +1,8 @@
-# NextCloud Cloud Server on Raspberry Pi 4B (8GB RAM)
+# NextCloud Cloud Server on Raspberry Pi 4B (8GB RAM) ☁️
 
 This repository contains instructions and scripts for setting up a NextCloud cloud server on a Raspberry Pi 4B.
 
-## Materials Required
+## Materials Required ⚒️
 
 - Raspberry Pi 4B with 4GB or 8GB of RAM
 - MicroSD card (16GB or larger)
@@ -11,7 +11,7 @@ This repository contains instructions and scripts for setting up a NextCloud clo
 - USB keyboard and mouse
 - HDMI cable and monitor or TV
 
-## Installation
+## Installation 🔽
 
 1. Download the Raspberry NextCloud image ([Download](https://github.com/nextcloud/nextcloudpi/releases/download/v1.52.0/NextCloudPi_RaspberryPi_v1.52.0.zip)). This version includes an installed NextCloud host so the setup is kept minimal. If you dont want to use the premade image you can follow this [Guide](https://docs.nextcloud.com/server/latest/admin_manual/installation).
 
@@ -61,7 +61,7 @@ This repository contains instructions and scripts for setting up a NextCloud clo
 
 10. Once the installation is complete, navigate to `http://[Raspberry Pi IP address]/nextcloud` on a web browser on another device connected to the same network to set up your Nextcloud account.
 
-## Usage
+## Usage ✋
 
 1. Navigate to `http://[Raspberry Pi IP address]/nextcloud` on a web browser on another device connected to the same network to set up your NextCloud account. You will be prompted to create an admin account and set a password.
 
@@ -83,7 +83,7 @@ This repository contains instructions and scripts for setting up a NextCloud clo
 
 We welcome contributions to this project! Here's how you can contribute:
 
-### Linux (Arch OS)
+### Linux (Arch OS) 🐧
 
 1. Fork the repository to your GitHub account by clicking the "Fork" button on the top right corner of this page.
 
@@ -110,7 +110,7 @@ git push origin master
 
 6. Wait for the project maintainers to review and merge your changes.
 
-### Windows
+### Windows 🪟
 
 1. Fork the repository to your GitHub account by clicking the "Fork" button on the top right corner of this page.
 
@@ -139,6 +139,6 @@ git push origin master
 
 Thank you for contributing to this project!
 
-## License
+## License 📖
 
 This project is licensed under the MIT License - see the LICENSE file for details.
