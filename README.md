@@ -2,7 +2,9 @@
 
 This repository contains instructions and scripts for setting up a NextCloud cloud server on a Raspberry Pi 4B.
 
-## Materials Required ⚒️ ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+## Materials Required ⚒️ 
+
+<span style="color:blue">some *blue* text</span>.
 
 - Raspberry Pi 4B with 4GB or 8GB of RAM
 - MicroSD card (16GB or larger)
