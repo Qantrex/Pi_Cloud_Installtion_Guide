@@ -1,4 +1,4 @@
-# **NextCloud Server** on **Raspberry Pi** 4B (8GB RAM) ☁️
+# ☁️ **NextCloud Server** on **Raspberry Pi** ☁️
 
 This repository contains **instructions** for setting up a NextCloud cloud server on a Raspberry Pi 4B.
 
