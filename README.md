@@ -37,11 +37,69 @@ sudo ./install.sh
 
 ## Usage
 
-Once you have set up your NextCloud account, you can use it to store and share files, access your calendar and contacts, and more.
+1. Navigate to `http://[Raspberry Pi IP address]/nextcloud` on a web browser on another device connected to the same network to set up your NextCloud account. You will be prompted to create an admin account and set a password.
 
-## Contributing
+2. Once you have created your account, you can upload and download files by clicking on the "Files" app. You can also create new folders, share files with other users, and view your file activity history.
 
-Please feel free to contribute to this project by submitting issues or pull requests.
+3. You can access your calendar and contacts by clicking on the "Calendar" and "Contacts" apps. You can create new events and contacts, and sync them across devices.
+
+4. You can install additional apps from the "Apps" page to add more functionality, such as document editing, video conferencing, and more.
+
+5. To upload files from your personal computer, simply click on the "Upload" button in the "Files" app and select the files you wish to upload. You can also drag and drop files into the web browser to upload them.
+
+6. To download files to your personal computer, simply click on the file you wish to download in the "Files" app and select the "Download" option. The file will be downloaded to your computer.
+
+7. You can also access your NextCloud account from other computers and devices by navigating to `http://[Raspberry Pi IP address]/nextcloud` on a web browser and logging in with your account credentials.
+
+8. Enjoy using your personal cloud server with NextCloud on your Raspberry Pi 4B!
+
+## Contribute
+
+We welcome contributions to this project! Here's how you can contribute:
+
+### Linux (Arch OS)
+
+1. Fork the repository to your GitHub account by clicking the "Fork" button on the top right corner of this page.
+
+2. Clone the forked repository to your local machine:
+
+git clone https://github.com/[YOUR_USERNAME]/[REPO_NAME].git
+
+3. Make your changes and commit them:
+
+git add [FILENAMES]
+git commit -m "Your commit message"
+
+4. Push your changes to your forked repository:
+
+git push origin master
+
+5. Create a pull request by navigating to the original repository and clicking on the "New pull request" button. 
+
+6. Wait for the project maintainers to review and merge your changes.
+
+### Windows
+
+1. Fork the repository to your GitHub account by clicking the "Fork" button on the top right corner of this page.
+
+2. Clone the forked repository to your local machine using Git Bash or any other command-line interface:
+
+git clone https://github.com/[YOUR_USERNAME]/[REPO_NAME].git#
+
+3. Make your changes and commit them:
+
+git add [FILENAMES]
+git commit -m "Your commit message"
+
+4. Push your changes to your forked repository:
+
+git push origin master
+
+5. Create a pull request by navigating to the original repository and clicking on the "New pull request" button.
+
+6. Wait for the project maintainers to review and merge your changes.
+
+Thank you for contributing to this project!
 
 ## License
 
