@@ -4,8 +4,6 @@ This repository contains **instructions** for setting up a NextCloud cloud serve
 
 ## Materials Required ⚒️ 
 
-<span style="color:blue">some *blue* text</span>.
-
 - Raspberry Pi with **more than 1GB** of RAM
 - MicroSD card (8GB or larger)
 - Power supply (5V, 3A)
