@@ -1,13 +1,13 @@
-# NextCloud Cloud Server on Raspberry Pi 4B (8GB RAM) ☁️
+# **NextCloud Server** on **Raspberry Pi** 4B (8GB RAM) ☁️
 
-This repository contains instructions and scripts for setting up a NextCloud cloud server on a Raspberry Pi 4B.
+This repository contains **instructions** for setting up a NextCloud cloud server on a Raspberry Pi 4B.
 
 ## Materials Required ⚒️ 
 
 <span style="color:blue">some *blue* text</span>.
 
-- Raspberry Pi 4B with 4GB or 8GB of RAM
-- MicroSD card (16GB or larger)
+- Raspberry Pi with **more than 1GB** of RAM
+- MicroSD card (8GB or larger)
 - Power supply (5V, 3A)
 - Ethernet cable or Wi-Fi adapter
 - USB keyboard and mouse
@@ -15,7 +15,7 @@ This repository contains instructions and scripts for setting up a NextCloud clo
 
 ## Installation 🔽
 
-1. Download the Raspberry NextCloud image ([Download](https://github.com/nextcloud/nextcloudpi/releases/download/v1.52.0/NextCloudPi_RaspberryPi_v1.52.0.zip)). This version includes an installed NextCloud host so the setup is kept minimal. If you dont want to use the premade image you can follow this [Guide](https://docs.nextcloud.com/server/latest/admin_manual/installation).
+1. Download the Raspberry NextCloud Image ([Download](https://github.com/nextcloud/nextcloudpi/releases/download/v1.52.0/NextCloudPi_RaspberryPi_v1.52.0.zip)). This version includes an installed NextCloud host so the setup is kept **minimal**. If you **dont** want to use the premade image you can follow this [Guide](https://docs.nextcloud.com/server/latest/admin_manual/installation).
 
 2. Use the Raspberry Pi Imager ([Download](https://www.raspberrypi.com/software/)) to write the .img file to the microSD card. Insert the microSD card into your computer and follow the prompts in the Raspberry Pi Imager tool to complete the process. Select "Choose OS" and then "Custom".
 
