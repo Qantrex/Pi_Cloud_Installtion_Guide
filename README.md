@@ -81,7 +81,7 @@ This repository contains instructions and scripts for setting up a NextCloud clo
 
 ## Contribute
 
-We welcome contributions to this project! Here's how you can contribute:
+I welcome you to contributions to this Guide! Here's how:
 
 ### Linux (Arch OS) 🐧
 
