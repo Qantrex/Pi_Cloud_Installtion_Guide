@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Script Config
+Latest_NextCloud_Version="1.0.0"
+
 # Configure network settings
 cat <<EOT >> /etc/network/interfaces
 auto eth0
@@ -16,19 +19,19 @@ php7.4-mbstring php7.4-intl php7.4-imagick \
 php7.4-zip php7.4-xml librsvg2-bin wget gnupg
 
 # Download Nextcloud
-wget https://download.nextcloud.com/server/releases/nextcloud-<latest-version>.zip
+wget https://download.nextcloud.com/server/releases/nextcloud-<$Latest_NextCloud_Version>.zip
 
 # Check package integrity
-wget https://download.nextcloud.com/server/releases/nextcloud-<latest-version>.zip.md5
-md5sum -c nextcloud-<latest-version>.zip.md5
+wget https://download.nextcloud.com/server/releases/nextcloud-<$Latest_NextCloud_Version>.zip.md5
+md5sum -c nextcloud-<$Latest_NextCloud_Version>.zip.md5
 
 # Verify authenticity via PGP
 wget https://nextcloud.com/nextcloud.asc
 gpg --import nextcloud.asc
-gpg --verify nextcloud-<latest-version>.zip.asc nextcloud-<latest-version>.zip
+gpg --verify nextcloud-<$Latest_NextCloud_Version>.zip.asc nextcloud-<$Latest_NextCloud_Version>.zip
 
 # Extract Nextcloud to web server folder
-unzip nextcloud-<latest-version>.zip -d /var/www/html/
+unzip nextcloud-<$Latest_NextCloud_Version>.zip -d /var/www/html/
 
 # Set ownership and permissions
 chown -R www-data:www-data /var/www/html/nextcloud/
