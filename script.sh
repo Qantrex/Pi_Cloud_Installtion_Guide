@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Script Config
-Latest_NextCloud_Version="1.0.0"
+echo "Current NextCloud version?"
+read Latest_NextCloud_Version
 
 # Configure network settings
 cat <<EOT >> /etc/network/interfaces
