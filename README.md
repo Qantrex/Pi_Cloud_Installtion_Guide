@@ -92,7 +92,9 @@ I welcome you to contributions to this Guide! Here's how:
 2. Clone the forked repository to your local machine:
 
 ```
-git clone https://github.com/[YOUR_USERNAME]/[REPO_NAME].git
+sudo pacman -Syu
+sudo pacman -Syu git
+git clone https://github.com/Qantrex/Pi_Cloud_Installtion_Guide.git
 ```
 
 3. Make your changes and commit them:
@@ -119,7 +121,7 @@ git push origin master
 2. Clone the forked repository to your local machine using Git Bash or any other command-line interface:
 
 ```
-git clone https://github.com/[YOUR_USERNAME]/[REPO_NAME].git#
+git clone https://github.com/Qantrex/Pi_Cloud_Installtion_Guide.git
 ```
 
 3. Make your changes and commit them:
