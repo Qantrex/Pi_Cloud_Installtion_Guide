@@ -81,7 +81,7 @@ If you **dont** want to use the premade image you can use the [custom script](sc
 
 8. Enjoy using your personal cloud server with NextCloud on your Raspberry Pi 4B!
 
-## Contribute
+## Contribute _([Offical Docs](https://docs.github.com/en/get-started/quickstart/contributing-to-projects))_
 
 I welcome you to contributions to this Guide! Here's how:
 
