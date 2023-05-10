@@ -13,73 +13,65 @@ This repository contains **instructions** for setting up a NextCloud cloud serve
 
 ## Installation 🔽
 
-1. Download the Raspberry NextCloud Image ([Download](https://github.com/nextcloud/nextcloudpi/releases/download/v1.52.0/NextCloudPi_RaspberryPi_v1.52.0.zip)). This version includes an installed NextCloud host so the setup is kept **minimal**. 
 
-If you **dont** want to use the premade image you can use the [custom script](script.sh) I made (Note: I do not update the script and you have to have basic bash knowledge to be able to use it. For further [Help](https://docs.nextcloud.com/server/latest/admin_manual/installation).
 
-2. Use the Raspberry Pi Imager ([Download](https://www.raspberrypi.com/software/)) to write the .img file to the microSD card. Insert the microSD card into your computer and follow the prompts in the Raspberry Pi Imager tool to complete the process. Select "Choose OS" and then "Custom".
+## Step 1: Get the NextCloudPi image
+
+1. Download the Raspberry NextCloud Image ([Download](https://github.com/nextcloud/nextcloudpi/releases/download/v1.52.0/NextCloudPi_RaspberryPi_v1.52.0.zip)). This version includes an installed NextCloud host so the setup is kept **minimal**.
+
+3. If you **dont** want to use the premade image you can use the [custom script](script.sh) I made (Note: I do not update the script and you have to have basic bash knowledge to be able to use it. For further [Help](https://docs.nextcloud.com/server/latest/admin_manual/installation).
+
+## Step 2: Flash NextCloudPi image to MicroSD card
+
+1. Use the Raspberry Pi Imager ([Download](https://www.raspberrypi.com/software/)) to write the .img file to the microSD card. Insert the microSD card into your computer and follow the prompts in the Raspberry Pi Imager tool to complete the process. Select "Choose OS" and then "Custom".
 
 3. If wanted you can use CTRL+STRG+X to open advanced settings and setup you network connection or ssh beforehand. (Only if you know what you are doing)
 
-4. Insert the microSD card into the Raspberry Pi and connect it to your network using an Ethernet cable or like previously mentioned configure the network beforehand in the Imager. Power on the Raspberry Pi.
+4. CLick Write and wait for the flashing process to complete.
 
-5. Find the IP address of your Raspberry Pi by running the following command in the Terminal app on another device connected to the same network:
+## Step 3: Boot up Raspberry Pi with NextCloudPi
 
-    ```
-    sudo apt install nmap
-    nmap -sn [network address]/24
-    ```
-    Replace `[network address]` with the IP address of your network router. This command will show a list of devices on your network, including the Raspberry Pi with       its IP address.
-    
-    another option is to run the following command on the rasberry pi and seatch for eth0 if connected through LAN or wlan0 if connected wireless
-    ```
-    ifconfig
-    ```
+1. Insert the MicroSD card into your Raspberry Pi.
 
-6. Log in to the Raspberry Pi with the default username "pi" and password "raspberry".
+3. Connect your Raspberry Pi to your network via Ethernet cable.
 
-7. Update all packages to the latest version by running the following commands in the Terminal app:
+5. Power on your Raspberry Pi.
 
-    ```
-    sudo apt update
-    sudo apt upgrade
-    ```
+5. Wait a few minutes for the boot process to complete.
 
-    This will update all the required packages and dependencies for Nextcloud.
+6. Open a web browser on your computer and navigate to http://nextcloudpi.local or http://<your_Raspberry_Pi_IP_address>
 
-8. Change directory to the Nextcloud repository with the following command:
+## Step 4: Initial Nextcloud setup
 
-    ```
-    cd raspberry-pi-nextcloud-server
-    ```
+1. Choose a username and password for your Nextcloud admin account.
 
-9. Run the installation script with the following command:
+3. Select the data directory. This is where all your files will be stored. The default directory is /var/www/nextcloud/data, but you can choose a different directory if you prefer.
 
-    ```
-    sudo ./install.sh
-    ```
+5. Set up your database. Nextcloud supports several database options. The easiest option for most users is SQLite, which is the default. If you're expecting heavy usage, you may want to consider using a different database.
 
-    This will start the installation process and guide you through configuring the web server and database server.
+7. Wait for the setup process to complete.
 
-10. Once the installation is complete, navigate to `http://[Raspberry Pi IP address]/nextcloud` on a web browser on another device connected to the same network to set up your Nextcloud account.
+## Step 5: Accessing Nextcloud
+
+
 
 ## Usage ✋
 
-1. Navigate to `http://[Raspberry Pi IP address]/nextcloud` on a web browser on another device connected to the same network to set up your NextCloud account. You will be prompted to create an admin account and set a password.
+1. Once the setup process is complete, you can access your Nextcloud instance by navigating to http://nextcloudpi.local or http://<your_Raspberry_Pi_IP_address> in your web browser.
 
-2. Once you have created your account, you can upload and download files by clicking on the "Files" app. You can also create new folders, share files with other users, and view your file activity history.
+3. Log in with the username and password you created during setup.
 
-3. You can access your calendar and contacts by clicking on the "Calendar" and "Contacts" apps. You can create new events and contacts, and sync them across devices.
+4. Once you have created your account, you can upload and download files by clicking on the "Files" app. You can also create new folders, share files with other users, and view your file activity history.
 
-4. You can install additional apps from the "Apps" page to add more functionality, such as document editing, video conferencing, and more.
+5. You can access your calendar and contacts by clicking on the "Calendar" and "Contacts" apps. You can create new events and contacts, and sync them across devices.
 
-5. To upload files from your personal computer, simply click on the "Upload" button in the "Files" app and select the files you wish to upload. You can also drag and drop files into the web browser to upload them.
+6. You can install additional apps from the "Apps" page to add more functionality, such as document editing, video conferencing, and more.
 
-6. To download files to your personal computer, simply click on the file you wish to download in the "Files" app and select the "Download" option. The file will be downloaded to your computer.
+7. To upload files from your personal computer, simply click on the "Upload" button in the "Files" app and select the files you wish to upload. You can also drag and drop files into the web browser to upload them.
 
-7. You can also access your NextCloud account from other computers and devices by navigating to `http://[Raspberry Pi IP address]/nextcloud` on a web browser and logging in with your account credentials.
+8. To download files to your personal computer, simply click on the file you wish to download in the "Files" app and select the "Download" option. The file will be downloaded to your computer.
 
-8. Enjoy using your personal cloud server with NextCloud on your Raspberry Pi 4B!
+9. You can also access your NextCloud account from other computers and devices by navigating to `http://[Raspberry Pi IP address]/nextcloud` on a web browser and logging in with your account credentials.
 
 ## Contribute _([Offical Docs](https://docs.github.com/en/get-started/quickstart/contributing-to-projects))_
 
